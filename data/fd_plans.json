@@ -1,1 +1,6 @@
+[
+  {"plan_id": "FD1", "duration": "6 months", "rate": "6.5%", "min_amount": 5000},
+  {"plan_id": "FD2", "duration": "1 year", "rate": "7.2%", "min_amount": 5000},
+  {"plan_id": "FD3", "duration": "3 years", "rate": "7.9%", "min_amount": 5000}
+]
 
