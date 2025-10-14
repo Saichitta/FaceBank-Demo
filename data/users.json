@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "name": "Amit Sharma",
+    "balance": 45890,
+    "face_id": "face_001",
+    "transactions": [
+      {"date": "2025-10-10", "type": "credit", "amount": 15000, "desc": "Pension"},
+      {"date": "2025-10-11", "type": "debit", "amount": 2000, "desc": "Electricity Bill"},
+      {"date": "2025-10-12", "type": "debit", "amount": 500, "desc": "Groceries"}
+    ]
+  }
+]
