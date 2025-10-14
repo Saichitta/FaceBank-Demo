@@ -1,0 +1,5 @@
+streamlit>=1.25
+groq>=0.2.0    # if using Groq; optional, falls back if missing
+speechrecognition>=3.8.1  # optional for STT (local & server-side uploaded audio)
+pydub  # might help with some audio formats (optional)
+streamlit-audiorecorder>=0.0.6  # optional, for in-browser audio recording
