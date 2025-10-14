@@ -6,8 +6,8 @@ from datetime import datetime
 import streamlit as st
 
 # -------------------- ENV / API KEYS --------------------
-from dotenv import load_dotenv
-load_dotenv()  # Load local .env if present
+# from dotenv import load_dotenv
+# load_dotenv()  # Load local .env if present
 
 # Groq SDK
 try:
@@ -59,10 +59,7 @@ if 'user_data' not in st.session_state:
     st.session_state.user_data = get_user().copy()
 
 # -------------------- GROQ CLIENT --------------------
-GROQ_API_KEY = (
-    os.environ.get("GROQ_API_KEY")
-    or (st.secrets["GROQ_API_KEY"] if "GROQ_API_KEY" in st.secrets else None)
-)
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"] if "GROQ_API_KEY" in st.secrets else None
 
 if GROQ_AVAILABLE and GROQ_API_KEY:
     try:
@@ -234,3 +231,4 @@ else:
             st.download_button("Download JSON", data=json.dumps(export, indent=2), file_name="facebank_session.json", mime="application/json")
 
 st.markdown("---")
+
