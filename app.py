@@ -171,7 +171,7 @@ else:
     user = st.session_state.user_data
     cols = st.columns([1, 3])
     with cols[0]:
-        st.image("assets/logo.png" if os.path.exists("assets/logo.png") else "https://via.placeholder.com/80", width=80)
+        st.image("assets/logo.jpg" if os.path.exists("assets/logo.png") else "https://via.placeholder.com/80", width=80)
     with cols[1]:
         st.markdown(f"**{user['name']}**")
         st.caption(f"Balance: ₹{int(user['balance'])}")
@@ -230,6 +230,7 @@ else:
             st.download_button("Download JSON", data=json.dumps(export, indent=2), file_name="facebank_session.json", mime="application/json")
 
 st.markdown("---")
+
 
 
 
