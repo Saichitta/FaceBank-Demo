@@ -149,7 +149,6 @@ def transcribe_uploaded_audio(uploaded_file):
 
 # -------------------- UI --------------------
 st.title("🏦 FaceBank — Agentic AI Banking Assistant")
-st.write("Accessible banking for elderly & differently-abled users. (Streamlit demo)")
 
 # -------------------- Face Recognition Login --------------------
 if not st.session_state.authenticated:
@@ -231,5 +230,6 @@ else:
             st.download_button("Download JSON", data=json.dumps(export, indent=2), file_name="facebank_session.json", mime="application/json")
 
 st.markdown("---")
+
 
 
