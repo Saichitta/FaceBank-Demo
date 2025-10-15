@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Amit Sharma",
+    "name": "Saichitta Debasis",
     "balance": 45890,
     "face_id": "face_001",
     "transactions": [
@@ -11,3 +11,4 @@
     ]
   }
 ]
+
