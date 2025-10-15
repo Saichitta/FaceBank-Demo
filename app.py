@@ -165,7 +165,7 @@ if not st.session_state.authenticated:
             "time": time.time()
         })
         st.rerun()
-    st.caption("If camera doesn't work on Streamlit Cloud, you can demo locally.")
+
 
 # -------------------- Chat Interface --------------------
 else:
@@ -231,4 +231,5 @@ else:
             st.download_button("Download JSON", data=json.dumps(export, indent=2), file_name="facebank_session.json", mime="application/json")
 
 st.markdown("---")
+
 
